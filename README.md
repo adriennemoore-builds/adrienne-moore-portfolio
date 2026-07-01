@@ -6,7 +6,7 @@ Senior PMM with 7+ years building GTM infrastructure from zero in B2B SaaS and c
 
 ## Portfolio
 
-[View Portfolio PDF](INSERT RAW PDF LINK HERE)
+[View Portfolio PDF](https://github.com/adriennemoore-builds/adrienne-moore-portfolio/blob/b304f7949c49373834f684fc942b9c95fb0e3628/Adrienne_Moore_Portfolio_26.pdf)
 
 ## Live Work Sample
 
