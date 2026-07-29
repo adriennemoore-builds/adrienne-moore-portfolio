@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adrienne Moore — Product Marketing Portfolio</title>
+<meta name="description" content="Product marketing portfolio — GTM strategy, positioning, and sales enablement case studies">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #121110;
+    --bg-alt: #1a1815;
+    --card: #1e1c18;
+    --border: #33302a;
+    --amber: #d9a441;
+    --amber-bright: #e8b656;
+    --cream: #ece7dd;
+    --muted: #a39a8a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--cream);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 28px; }
+  a { color: var(--amber-bright); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  header.hero { padding: 90px 0 60px; border-bottom: 1px solid var(--border); }
+  .label {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+    color: var(--amber);
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 1.15;
+    color: var(--cream);
+    margin-bottom: 8px;
+  }
+  h1 em {
+    font-style: italic;
+    color: var(--amber-bright);
+    font-weight: 500;
+  }
+  .subtitle {
+    font-size: 18px;
+    color: var(--muted);
+    margin: 18px 0 26px;
+    max-width: 620px;
+  }
+  .contact { font-size: 14px; color: var(--muted); }
+  .contact a { color: var(--cream); border-bottom: 1px solid var(--border); }
+
+  .bridge {
+    margin-top: 30px;
+    padding: 18px 22px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--amber);
+    font-size: 15px;
+    color: var(--cream);
+  }
+  .bridge b { color: var(--amber-bright); }
+
+  section { padding: 56px 0; border-bottom: 1px solid var(--border); }
+  section:last-of-type { border-bottom: none; }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--cream);
+    margin-bottom: 26px;
+  }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  .stat-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 24px;
+  }
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--amber-bright);
+    margin-bottom: 8px;
+  }
+  .stat-label { font-size: 14px; color: var(--muted); }
+
+  .case {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--border);
+  }
+  .case:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .case h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--cream);
+    margin-bottom: 8px;
+  }
+  .case .tag {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--amber);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+  }
+  .case p { color: var(--muted); font-size: 15px; }
+  .case p .note { color: var(--muted); font-style: italic; font-size: 14px; }
+
+  table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+  th, td {
+    text-align: left;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+  }
+  th {
+    color: var(--amber);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  td { color: var(--muted); }
+  td:first-child { color: var(--cream); font-weight: 500; }
+
+  .note-box {
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--muted);
+    padding: 16px 20px;
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+  }
+
+  ul.samples { list-style: none; }
+  ul.samples li {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 15px;
+    color: var(--muted);
+  }
+  ul.samples li:last-child { border-bottom: none; }
+  ul.samples a { color: var(--cream); font-weight: 500; }
+
+  .divider {
+    height: 1px;
+    background: repeating-linear-gradient(90deg, var(--border) 0 6px, transparent 6px 10px);
+    margin: 0;
+  }
+
+  footer {
+    padding: 40px 0 60px;
+    font-size: 14px;
+  }
+  footer .links a {
+    color: var(--cream);
+    font-weight: 500;
+    margin-right: 4px;
+  }
+  footer .credit { color: var(--muted); margin-top: 24px; font-size: 13px; }
+
+  @media (max-width: 640px) {
+    h1 { font-size: 34px; }
+    .stat-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="label">Fractional &amp; Full-Time Product Marketing Leadership</div>
+    <h1>Adrienne Moore</h1>
+    <div class="subtitle">Senior Product Marketing Manager — GTM Strategy &amp; Market Entry, Sales Enablement</div>
+    <div class="contact">
+      Maryland · <a href="mailto:adrienneamoore1@gmail.com">adrienneamoore1@gmail.com</a> · <a href="https://www.linkedin.com/in/adrienne-m-93764712/">LinkedIn</a>
+    </div>
+    <div class="bridge">
+      Currently building <b>Mouse &amp; Matter</b> — a fractional product marketing practice for founders and teams entering markets that don't know their product yet. Open to both full-time PMM leadership roles and fractional engagements. <a href="https://mouseandmatter.netlify.app/">See how we work →</a>
+    </div>
+  </div>
+</header>
+
+<div class="divider"></div>
+
+<section>
+  <div class="wrap">
+    <div class="label">What I Do</div>
+    <h2>I build the infrastructure <em>that doesn't exist yet.</em></h2>
+    <p style="color:var(--muted); font-size:16px; max-width:620px;">Go-to-market strategy, positioning, sales enablement, demand generation, and pipeline attribution — in markets with no existing playbook. Higher ed, healthcare, federal, financial services, and independent creative clients, all with no prior domain expertise required going in.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+  <div class="wrap">
+    <div class="label">Proof, Not Just Claims</div>
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="stat-num">$363K</div>
+        <div class="stat-label">Marketing-attributed revenue — 48% of a $755K total pipeline, as Common App's first dedicated PMM.</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">11.6%</div>
+        <div class="stat-label">Lead-to-close conversion, $182K in revenue, from an automated nurture system built in Salesforce Marketing Cloud.</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">43%</div>
+        <div class="stat-label">Average email open rate, up to 13.7% CTR — against a 2% industry benchmark.</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">325+</div>
+        <div class="stat-label">Qualified leads, 60% webinar close rate, from an ABM conference and peer-validation strategy.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+  <div class="wrap">
+    <div class="label">The Work</div>
+    <h2>Case Studies</h2>
+
+    <div class="case">
+      <span class="tag">Institutional Market GTM</span>
+      <h3>Common App, 2024–Present</h3>
+      <p>Built the full sales enablement ecosystem — personas, segmentation, lead scoring, battlecards, playbooks — for a lean sales team closing multi-stakeholder enterprise deals. Authored the FY27 GTM Strategy adopted by leadership as the operating plan for market expansion. <a href="docs/Adrienne_Moore_Portfolio_26.pdf">Read the full case study →</a></p>
+    </div>
+
+    <div class="case">
+      <span class="tag">Net-New Market Entry</span>
+      <h3>Community Colleges, Common App</h3>
+      <p>Architected Common App's first-ever entry into the community college sector — 39% of U.S. undergraduates — with no existing playbook, no research budget, and no organizational precedent. Built personas from primary research with college presidents and VPs, launched conference strategy, and secured the first cohort of community college members.</p>
+    </div>
+
+    <div class="case">
+      <span class="tag">Technical Product, Skeptical Buyer</span>
+      <h3>MeCision (Mouse &amp; Matter)</h3>
+      <p>Built end-to-end GTM infrastructure for a mental health technology platform where the product was clinically sophisticated and the buyer was stigma-aware and slow to trust. Diagnosed trust as the core conversion barrier before writing a word of messaging.</p>
+    </div>
+
+    <div class="case">
+      <span class="tag">AI Product Design &amp; Automation</span>
+      <h3>Saunders Suite (Mouse &amp; Matter)</h3>
+      <p>Designed and built a personal AI operating system — five integrated apps and one automated morning briefing. Same diagnostic method as the GTM work, applied to a different kind of build. <span class="note">(Live product is a private, personal deliverable — happy to walk through it directly on request.)</span></p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+  <div class="wrap">
+    <div class="label">What I Build</div>
+    <h2>The Full Stack</h2>
+    <table>
+      <tr><th>Area</th><th>Includes</th></tr>
+      <tr><td>Positioning</td><td>Messaging frameworks, persona development, ICP profiles, differentiation maps</td></tr>
+      <tr><td>Sales enablement</td><td>Pitch decks, battlecards, objection handling guides, talk tracks by segment</td></tr>
+      <tr><td>Launch infrastructure</td><td>GTM plans, launch briefs, asset suites, conference strategy</td></tr>
+      <tr><td>Content systems</td><td>Landing pages, one-pagers, email sequences, webinar series</td></tr>
+      <tr><td>Market intelligence</td><td>Competitive analysis, win/loss frameworks, field research synthesis</td></tr>
+      <tr><td>Automated systems</td><td>Lead qualification workflows, nurture journeys, Salesforce Marketing Cloud builds</td></tr>
+    </table>
+    <div class="note-box">
+      <b style="color:var(--cream);">Note:</b> the Saunders Suite case study includes "Saunders Scholar," a tracker supporting a self-directed course of study I designed and built myself — sourced the material, sequenced the modules, set my own benchmarks. <a href="case-studies/self-directed-course-case-study.html">Full story →</a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+  <div class="wrap">
+    <div class="label">Live Work Samples</div>
+    <ul class="samples">
+      <li><a href="https://www.commonapp.org/members/community-colleges">Community College Landing Page</a> — built from scratch for Common App's net-new market entry</li>
+      <li><a href="https://drive.google.com/file/d/1n_EQEXsCYi5M6IRYHe_uJnBtuQoczWQK/view?usp=sharing">Community College + Four-Year Talk Track</a></li>
+      <li><a href="https://drive.google.com/file/d/1gooiQrouWPfnPiTuj4lZXCK3IiHg8xdu/view?usp=sharing">Early Adopter Program Leave-Behind</a></li>
+    </ul>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+  <div class="wrap">
+    <div class="label">Education</div>
+    <p style="color:var(--muted);">M.A., Global Marketing Communication &amp; Advertising — Emerson College<br>B.A., Journalism — Bennett College</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="links">
+      <a href="docs/Adrienne_Moore_Resume_2026_v4.pdf">Full Resume (PDF)</a> ·
+      <a href="docs/Adrienne_Moore_Portfolio_26.pdf">Full Portfolio (PDF)</a> ·
+      <a href="https://mouseandmatter.netlify.app/">Mouse &amp; Matter</a>
+    </div>
+    <div class="credit">We find the connection everyone else missed.</div>
+  </div>
+</footer>
+
+</body>
+</html>
